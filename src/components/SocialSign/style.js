@@ -4,9 +4,16 @@ export const Group = styled.View`
   position: relative;
   margin: 0 auto;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: center;
   gap: 18px;
+`;
+
+export const TextGroup = styled.View`
+  display: flex;
+  margin: 0 auto;
+  padding-top: 15px;
+  flex-direction: row;
 `;
 
 export const Container = styled.View`

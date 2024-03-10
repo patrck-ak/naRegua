@@ -1,16 +1,23 @@
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
-import { Group, Button, Container } from "./style";
+import { Group, TextGroup, Button, Container } from "./style";
 import { Pressable, Text } from "react-native";
 
-export default function OAuth() {
+export default function SocialSign() {
   const handlePress = () => console.log("apertou");
 
   return (
     <>
+      <TextGroup>
+        <Text
+          style={{
+            fontWeight: "700",
+          }}
+        >
+          Entrar com:
+        </Text>
+      </TextGroup>
       <Group>
-        <Text style={{ alignSelf: "center" }}>Entrar com:</Text>
-
         {/* Facebook oAuth */}
         <Pressable onPress={handlePress}>
           <Container>

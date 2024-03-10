@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 // container geral
 export const FormCont = styled.View`
@@ -14,6 +14,16 @@ export const FormCont = styled.View`
   box-shadow: 0 5px 20px #00000050;
 `;
 
+// Recover
+export const Recover = styled.View`
+  padding: 15px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+`;
+
+export const RecoverLink = styled.Text``;
+
 // label
 export const FormLabel = styled.Text`
   padding-left: 13px;
@@ -22,7 +32,7 @@ export const FormLabel = styled.Text`
 
 // grupo de inputs
 export const Group = styled.View`
-  padding-top: 150px;
+  padding-top: 20px;
   gap: 15px;
 `;
 
