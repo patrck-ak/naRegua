@@ -1,92 +1,63 @@
-// import { useState } from "react";
+import { useState } from "react";
 import React from "react";
 
-//* PADRÃO claro
-// const [theme, setTheme] = useState("light");
-
-// export function defTheme(selectTheme) {
-//   setTheme(selectTheme);
-//   return console.log("ok");
-// }
-
-// export var userTheme = theme;
+export default function defTheme() {
+  const [theme, setTheme] = useState("light");
+}
 
 export const barbearias = [
   {
     id: 1,
     nome: "Patrick Oliveira",
+    shortAgenda: "8h - 16:00",
     agenda: ["08:00", "09:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
+    qualidade: 5,
     servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
+    profile: "https://picsum.photos/200",
   },
   {
     id: 2,
     nome: "João Silva",
+    shortAgenda: "8h - 16:00",
     agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "16:00"],
     qualidade: 5,
     servicos: ["Corte Simples"],
+    profile: "https://picsum.photos/200",
   },
   {
     id: 3,
     nome: "Antonio Abreu",
+    shortAgenda: "9h - 16h",
     agenda: ["09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
     qualidade: 2,
     servicos: ["Corte Simples", "Barba", "Sobrancelha"],
+    profile: "https://picsum.photos/200",
   },
   {
     id: 4,
     nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
+    shortAgenda: "9h - 13h",
+    agenda: ["08:00", "09:00", "10:00", "13:00"],
+    qualidade: 3,
     servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
+    profile: "https://picsum.photos/200",
   },
   {
     id: 5,
-    nome: "Jhennefer Machado",
+    nome: "Joãozinho do corte",
+    shortAgenda: "8h - 16h",
     agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
+    qualidade: 5,
     servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
+    profile: "https://picsum.photos/200",
   },
   {
-    id: 45,
-    nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
+    id: 6,
+    nome: "Pedrão cria",
+    shortAgenda: "10h - 15h",
+    agenda: ["10:00", "13:00", "14:00", "15:00"],
+    qualidade: 5,
     servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
-  },
-  {
-    id: 55,
-    nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
-    servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
-  },
-  {
-    id: 11,
-    nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
-    servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
-  },
-  {
-    id: 32,
-    nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
-    servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
-  },
-  {
-    id: 12,
-    nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
-    servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
-  },
-  {
-    id: 23,
-    nome: "Jhennefer Machado",
-    agenda: ["08:00", "09:00", "10:00", "13:00", "14:00", "15:00", "16:00"],
-    qualidade: 10,
-    servicos: ["Corte Simples", "Nevou", "Barba", "Sobrancelha"],
+    profile: "https://picsum.photos/200",
   },
 ];

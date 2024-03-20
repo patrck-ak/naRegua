@@ -12,5 +12,5 @@ export const Body = styled.View`
   margin: 0 auto;
   position: relative;
   border-radius: 10px;
-  background-color: #fefefe;
+  background: #fefefe;
 `;

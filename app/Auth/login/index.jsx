@@ -1,5 +1,5 @@
 import React from "react";
-import SocialSign from "../../components/SocialSign";
+import SocialSign from "../../../src/components/SocialSign/index";
 import {
   InputForm,
   FormCont,
@@ -10,10 +10,10 @@ import {
   Group,
   Recover,
   RecoverLink,
-} from "./Styles";
+} from "./styles";
 import { CheckBox, Text } from "react-native";
 
-function Auth() {
+export default function Login() {
   return (
     <>
       <FormCont>
@@ -51,5 +51,3 @@ function Auth() {
     </>
   );
 }
-
-export default Auth;
