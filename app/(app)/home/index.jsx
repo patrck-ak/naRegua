@@ -1,8 +1,8 @@
 import React from "react";
 import { Body } from "./styles.js";
-import { barbearias } from "../../src/config.js";
+import { barbearias } from "../../../src/config.js";
 import { FlatList } from "react-native";
-import ItemList from "../../src/components/ItemList/Index.jsx";
+import ItemList from "../../../src/components/ItemList/Index.jsx";
 
 export default function Home() {
   return (

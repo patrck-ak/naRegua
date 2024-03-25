@@ -1,5 +1,4 @@
 import React from "react";
-import SocialSign from "../../../src/components/SocialSign/index";
 import {
   InputForm,
   FormCont,
@@ -13,12 +12,10 @@ import {
 } from "./styles";
 import { CheckBox, Text } from "react-native";
 
-export default function Login() {
+export default function Sign() {
   return (
     <>
       <FormCont>
-        <SocialSign />
-
         <Group>
           <FormGroup>
             <FormLabel>Usuário</FormLabel>

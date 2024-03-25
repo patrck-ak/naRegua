@@ -5,6 +5,8 @@ export default function defTheme() {
   const [theme, setTheme] = useState("light");
 }
 
+export const url = "http://localhost:5000";
+
 export const barbearias = [
   {
     id: 1,

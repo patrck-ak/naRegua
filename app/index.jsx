@@ -1,24 +1,17 @@
+import { Link } from "expo-router";
 import React from "react";
+import { Pressable, StyleSheet } from "react-native";
 import { Body } from "./styles";
-import { Link, router } from "expo-router";
-import { Button } from "react-native";
 
 export default function index() {
-  const handleRedirect = (choice) => {
-    switch (choice) {
-      case "login":
-        router.replace("/auth/index");
-        break;
-      case "sign":
-        router.replace("/sign/index");
-    }
-  };
   return (
-    <>
-      <Body>
-        <Button title="Entrar" onPress={handleRedirect("login")} />
-        <Button title="Cadastro" onPress={handleRedirect("sign")} />
-      </Body>
-    </>
+    <Body>
+      <Pressable style={{ padding: 10, backgroundColor: "#7a7a7a" }}>
+        <Link href={"/login/"}>LOGIN</Link>
+      </Pressable>
+      <Pressable>
+        <Link href={"/sign/"}>CADASTRO</Link>
+      </Pressable>
+    </Body>
   );
 }

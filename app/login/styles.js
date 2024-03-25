@@ -1,5 +1,12 @@
 import styled from "styled-components/native";
 
+// body
+export const Body = styled.View`
+  background: #153944;
+  width: 100%;
+  height: 100%;
+`;
+
 // container geral
 export const FormCont = styled.View`
   gap: 5px;
@@ -59,6 +66,7 @@ export const SubmitButton = styled.Button`
 `;
 
 export const ButtonBg = styled.View`
+  box-shadow: 0 5px 20px #00000020;
   padding: 1px;
   margin: auto;
   width: 40%;
