@@ -1,11 +1,22 @@
 import { useState } from "react";
 import React from "react";
 
-export default function defTheme() {
-  const [theme, setTheme] = useState("light");
+const [theme, setTheme] = useState("Light");
+
+export default function defTheme(choice) {
+  switch (choice) {
+    case "light":
+      setTheme("Light");
+      break;
+    case "dark":
+      setTheme("Dark");
+      break;
+    default:
+      setTheme("Light");
+  }
 }
 
-export const url = "http://localhost:5000";
+export const url = "https://naregua-backend.onrender.com";
 
 export const barbearias = [
   {

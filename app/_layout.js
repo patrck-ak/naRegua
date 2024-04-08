@@ -1,5 +1,4 @@
-import { Slot, Stack } from "expo-router";
-import { View } from "react-native";
+import { Stack } from "expo-router";
 
 export default function indexLayout() {
   return (
@@ -14,20 +13,13 @@ export default function indexLayout() {
       }}
     >
       <Stack.Screen
-        name="index"
-        options={{
-          headerShown: false,
-        }}
-      />
-      {/*    */}
-      <Stack.Screen
-        name="login/index"
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Stack.Screen
         name="sign/index"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="index"
         options={{
           headerShown: false,
         }}
