@@ -1,5 +1,5 @@
 import { router } from "expo-router";
-import React from "react";
+import React, { useEffect } from "react";
 import { Body } from "./styles";
 import { SafeAreaView, Text } from "react-native";
 
@@ -14,6 +14,14 @@ export default function Login() {
   const checkSession = () => {
     return true;
   };
+
+  useEffect(() => {
+    if (checkSession) {
+      router.replace("/homepage");
+    } else {
+      router.replace("/auth/login");
+    }
+  }, []);
 
   return (
     <Body>
