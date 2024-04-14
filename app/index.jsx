@@ -1,30 +1,21 @@
 import { router } from "expo-router";
 import React, { useEffect } from "react";
 import { Body } from "./styles";
-import { SafeAreaView, Text } from "react-native";
+import { Button, SafeAreaView, Text } from "react-native";
 
-export default function Login() {
+export default function Index() {
   // redirect pra cadastro
   const handleSign = () => {
-    console.log("sign");
-    return router.navigate("sign/");
+    return router.navigate("/auth/sign/");
   };
-
-  // checar sessão
-  const checkSession = () => {
-    return true;
+  const handleLogin = () => {
+    return router.navigate("/auth/login/");
   };
-
-  useEffect(() => {
-    if (checkSession) {
-      router.replace("/homepage");
-    } else {
-      router.replace("/auth/login");
-    }
-  }, []);
 
   return (
     <Body>
+      <Button title="sign" onPress={() => handleSign()} />
+      <Button title="login" onPress={() => handleLogin()} />
       <SafeAreaView>
         <Text>View</Text>
       </SafeAreaView>

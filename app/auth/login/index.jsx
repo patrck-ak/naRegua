@@ -9,8 +9,7 @@ import { api } from "../../../src/api/api";
 export default function Login() {
   // redirect pra cadastro
   const handleSign = () => {
-    console.log("sign");
-    return router.navigate("sign/");
+    return router.navigate("/auth/sign/");
   };
 
   // login via usuario
